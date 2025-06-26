@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext } from "react";
 
 import { BACKGROUND_COLORS } from "../background-colors.js";
 
@@ -26,12 +26,8 @@ export default function PortfolioContextProvider({ children }) {
         setIsVisible(true);
       }, 300);
     }
-    window.scrollTo({ top: 0, behavior: "smooth" }); 
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" }); // Scrolls up on component change
-  }, [activePage]);
 
   const ctxValue = {
     activePage,
