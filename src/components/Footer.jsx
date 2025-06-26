@@ -1,4 +1,4 @@
-import profilePic from "../../public/img/profile.jpg";
+import profilePic from "../img/profile.jpg";
 
 export default function Footer() {
   return (
@@ -22,7 +22,10 @@ export default function Footer() {
                 +359 88 845 1660
               </span>
             </p>
-            <a href="https://www.linkedin.com/in/stiliyan-yanev-4a526b319/">
+            <a
+              href="https://www.linkedin.com/in/stiliyan-yanev-4a526b319/"
+              target="_blank"
+            >
               LinkedIn:{" "}
               <span className="text-[#264653] underline decoration-dashed underline-offset-2">
                 Stiliyan Yanev

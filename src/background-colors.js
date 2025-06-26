@@ -1,4 +1,4 @@
 export const BACKGROUND_COLORS = {
-  "about-me": "#E9C46A",
+  "main-page": "#eec764",
   portfolio: "#EEB9A8",
 };

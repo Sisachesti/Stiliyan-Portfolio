@@ -1,12 +1,21 @@
+import { useContext } from "react";
+
 import Navbar from "../components/Navbar";
 
-export default function Header({handleSetActivePage}) {
+import { PortfolioContext } from "../store/portfolio-context.jsx";
+
+export default function Header() {
+  const {setActivePage} = useContext(PortfolioContext);
+
   return (
-    <header className="fixed flex w-full justify-between p-8 z-50">
-      <button onClick={() => handleSetActivePage('about-me')} className="cursor-pointer text-3xl font-bold transition duration-150 ease-in-out hover:text-slate-800">
+    <header className="fixed z-50 flex w-full justify-between p-8">
+      <button
+        onClick={() => setActivePage("main-page")}
+        className="cursor-pointer text-3xl font-bold transition duration-150 ease-in-out hover:text-slate-800"
+      >
         Stiliyan Yanev
       </button>
-      <Navbar setActivePage={handleSetActivePage}/>
+      <Navbar />
     </header>
   );
 }
