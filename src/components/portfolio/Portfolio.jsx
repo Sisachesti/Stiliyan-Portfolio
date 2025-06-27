@@ -1,8 +1,8 @@
-import Card from "./portfolio/Card";
+import Card from "./Card";
 
-import firstProjectPic from "../img/first-project.png";
-import plovdivUniPic from "../img/plovdiv-uni.png";
-import reactNextJsPic from "../img/react-nextjs.jpg";
+import firstProjectPic from "../../img/first-project.png";
+import plovdivUniPic from "../../img/plovdiv-uni.png";
+import reactNextJsPic from "../../img/react-nextjs.jpg";
 
 export default function Portfolio() {
   return (
@@ -33,7 +33,8 @@ export default function Portfolio() {
               specializing in Software engineering.
             </Card>
             <Card header="Skill Progression" img={reactNextJsPic}>
-              Progression of learning React, Next.js and Redux for becoming Full-stack.
+              Progression of learning React, Next.js and Redux for becoming
+              Full-stack.
             </Card>
           </div>
         </section>
