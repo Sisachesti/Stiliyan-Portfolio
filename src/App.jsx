@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Homepage from "./components/homepage/Homepage";
 import Footer from "./components/Footer";
 import Portfolio from "./components/portfolio/Portfolio";
+import About from "./components/About";
 
 import { PortfolioContext } from "./store/portfolio-context";
 
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div
-      className={`bg-[${backgroundColor}] text-[#003049] selection:bg-[#287271] selection:text-[#F4A261]`}
+      className={`bg-[${backgroundColor}] text-[#003049]`}
     >
       <Header />
       <div
@@ -21,6 +22,7 @@ function App() {
       >
         {activePage === "homepage" && <Homepage />}
         {activePage === "portfolio" && <Portfolio />}
+        {activePage === "about" && <About />}
       </div>
       <Footer />
     </div>

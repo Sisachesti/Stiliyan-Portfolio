@@ -13,7 +13,7 @@ export default function Navbar() {
       >
         Portfolio
       </button>
-      <button onClick={() => setActivePage("about-me")}>About</button>
+      <button onClick={() => setActivePage("about")}>About</button>
       <button
         onClick={() => setActivePage("contacts")}
         className="rounded-r-full"

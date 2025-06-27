@@ -2,8 +2,8 @@ import profilePic from "../img/profile.jpg";
 
 export default function Footer() {
   return (
-    <footer className="flex h-100 items-center justify-center bg-[#B2C6C9] text-[#003049]">
-      <div className="grid h-[70%] w-[90%] grid-cols-[33%_34%_33%] bg-[#FDF0D5] p-8">
+    <footer className="flex h-100 items-center justify-center bg-[#B2C6C9] text-[#003049] selection:bg-[#003049] selection:text-[#F1DBB7]">
+      <div className="grid h-[70%] w-[90%] grid-cols-[33%_34%_33%] rounded-xl bg-[#FDF0D5] p-8 shadow-xl">
         <div className="flex flex-col justify-evenly">
           <div>
             <p className="text-3xl">Wanna keep in touch?</p>
@@ -25,10 +25,21 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/stiliyan-yanev-4a526b319/"
               target="_blank"
+              className="block"
             >
               LinkedIn:{" "}
               <span className="text-[#264653] underline decoration-dashed underline-offset-2">
                 Stiliyan Yanev
+              </span>
+            </a>
+            <a
+              href="https://github.com/Sisachesti"
+              target="_blank"
+              className="block"
+            >
+              GitHub:{" "}
+              <span className="text-[#264653] underline decoration-dashed underline-offset-2">
+                Sisachesti
               </span>
             </a>
           </div>

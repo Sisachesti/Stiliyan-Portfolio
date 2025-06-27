@@ -6,7 +6,7 @@ import reactNextJsPic from "../../img/react-nextjs.jpg";
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-[#EEB9A8] px-6 py-12">
+    <main className="min-h-screen bg-[#EEB9A8] px-6 py-12 selection:bg-[#780000] selection:text-[#FDF0D5]">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <p className="mb-4 text-4xl font-bold text-[#003049] md:text-5xl">
