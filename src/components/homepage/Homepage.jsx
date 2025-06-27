@@ -1,6 +1,6 @@
-import TypewriterEffect from "../components/TypewriterEffect";
+import TypewriterEffect from "./TypewriterEffect";
 
-export default function AboutMe() {
+export default function Homepage() {
   return (
     <div>
       <main className="flex min-h-screen w-full flex-col justify-center bg-[#eec764] px-[20%]">

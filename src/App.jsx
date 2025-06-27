@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
 import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
+import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 
@@ -20,7 +20,7 @@ function App() {
       <div
         className={`transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
-        {activePage === "main-page" && <AboutMe />}
+        {activePage === "homepage" && <Homepage />}
         {activePage === "portfolio" && <Portfolio />}
       </div>
       <Footer />

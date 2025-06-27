@@ -4,14 +4,14 @@ import { BACKGROUND_COLORS } from "../background-colors.js";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const PortfolioContext = createContext({
-  activePage: "main-page",
-  backgroundColor: BACKGROUND_COLORS["main-page"],
+  activePage: "homepage",
+  backgroundColor: BACKGROUND_COLORS["homepage"],
   isVisible: true,
   setActivePage: () => {},
 });
 
 export default function PortfolioContextProvider({ children }) {
-  const [activePage, setActivePage] = useState("main-page");
+  const [activePage, setActivePage] = useState("homepage");
   const [isVisible, setIsVisible] = useState(true);
   const [backgroundColor, setBackgroundColor] = useState(
     BACKGROUND_COLORS[activePage],

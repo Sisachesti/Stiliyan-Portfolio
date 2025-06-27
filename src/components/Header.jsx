@@ -5,15 +5,15 @@ import Navbar from "../components/Navbar";
 import { PortfolioContext } from "../store/portfolio-context.jsx";
 
 export default function Header() {
-  const {setActivePage} = useContext(PortfolioContext);
+  const { setActivePage } = useContext(PortfolioContext);
 
   return (
     <header className="fixed z-50 flex w-full justify-between p-8">
       <button
-        onClick={() => setActivePage("main-page")}
+        onClick={() => setActivePage("homepage")}
         className="cursor-pointer text-3xl font-bold transition duration-150 ease-in-out hover:text-slate-800"
       >
-        Stiliyan Yanev
+        Homepage
       </button>
       <Navbar />
     </header>

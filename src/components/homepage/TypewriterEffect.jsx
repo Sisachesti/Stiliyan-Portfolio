@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { WORDS_GENERATOR } from "../words-generator";
+import { WORDS_GENERATOR } from "../../words-generator";
 
 export default function TypewriterEffect() {
   const words = WORDS_GENERATOR;
