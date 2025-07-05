@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Homepage from "./components/homepage/Homepage";
 import Footer from "./components/Footer";
 import Portfolio from "./components/portfolio/Portfolio";
-import About from "./components/About";
+import About from "./components/about/About";
 
 import { PortfolioContext } from "./store/portfolio-context";
 

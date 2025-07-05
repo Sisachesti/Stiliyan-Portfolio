@@ -5,9 +5,11 @@ import { BACKGROUND_COLORS } from "../background-colors.js";
 // eslint-disable-next-line react-refresh/only-export-components
 export const PortfolioContext = createContext({
   activePage: "homepage",
+  language: "bg",
   backgroundColor: BACKGROUND_COLORS["homepage"],
   isVisible: true,
   setActivePage: () => {},
+  setLanguage: () => {},
 });
 
 export default function PortfolioContextProvider({ children }) {
@@ -16,6 +18,7 @@ export default function PortfolioContextProvider({ children }) {
   const [backgroundColor, setBackgroundColor] = useState(
     BACKGROUND_COLORS[activePage],
   );
+  const [language, setLanguage] = useState("bg");
 
   const handleSetActivePage = (pageName) => {
     if (activePage !== pageName) {
@@ -29,11 +32,17 @@ export default function PortfolioContextProvider({ children }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  function handleSetLanguage(language) {
+    setLanguage(language);
+  }
+
   const ctxValue = {
     activePage,
+    language,
     isVisible,
     backgroundColor,
     setActivePage: handleSetActivePage,
+    setLanguage: handleSetLanguage,
   };
 
   return (

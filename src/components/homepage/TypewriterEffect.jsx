@@ -1,13 +1,23 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { PortfolioContext } from "../../store/portfolio-context";
 
-import { WORDS_GENERATOR } from "../../words-generator";
+import { ENGLISH, BULGARIAN } from "../lang/languages";
 
 export default function TypewriterEffect() {
-  const words = WORDS_GENERATOR;
+  const { language } = useContext(PortfolioContext);
+
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [charIndex, setCharIndex] = useState(0);
+
+  let words;
+
+  if (language === "en") {
+    words = ENGLISH.homepage["words-generator"];
+  } else {
+    words = BULGARIAN.homepage["words-generator"];
+  }
 
   useEffect(() => {
     const currentWord = words[currentWordIndex];
